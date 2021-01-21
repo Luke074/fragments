@@ -18,7 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/megamanX"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <TextView
             android:id="@+id/text_view_game_name"
