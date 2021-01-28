@@ -13,10 +13,11 @@ class GameDataSource {
 
             games.add(Game(1,
                 "sonic unleashed",
-                context.getDrawable(R.drawable.sonic_unleashed)!!,
+                context.getDrawable(R.drawable.sonic)!!,
                 "Sonic Unleashe é um jogo muito bom, mas com alguns bugs",
-                4.5,
-                listOf(Console(1, "Wii", "Nintendo", "2006-11-19"),
+                4.5f,
+                listOf(
+                    Console(1, "Wii", "Nintendo", "2006-11-19"),
                     Console(2,"Playstation 3", "Sony", "2006-11-11")
                 ))
             )
@@ -24,7 +25,18 @@ class GameDataSource {
                 "Super Mario Bros",
                 context.getDrawable(R.drawable.mario_bros)!!,
                 "Super Mario Bros é um jogo classico",
-                5.0, listOf(Console(3, "Nintendinho(NES)", "Nintendo", "1985-09-13")
+                4f, listOf(
+                    Console(3, "NES", "Nintendo", "1985-09-13")
+                ))
+            )
+            games.add(Game(3,
+                "Megaman",
+                context.getDrawable(R.drawable.megaman)!!,
+                "A famosa série Mega Man X está de volta! Jogue como Mega Man X - o poderoso sucessor do clássico robô de luta Mega Man - " +
+                        "enquanto ele luta contra uma variedade de chefes mortais conhecidos como Mavericks em quatro títulos de sucesso.",
+                4f,
+                listOf(
+                    Console(4, "Super Nintendo", "Nintendo", "1990-11-21")
                 ))
             )
 

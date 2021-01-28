@@ -7,8 +7,9 @@
     android:background="@drawable/yummi">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_games"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/holder_reclycer_view_layout" />
+        tools:listitem="@layout/holder_game_layout" />
 
 </RelativeLayout>

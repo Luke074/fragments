@@ -14,10 +14,10 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/image_view_megaman"
+            android:id="@+id/image_view_game"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/megamanX"
+            android:src="@drawable/megaman"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -28,31 +28,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Megaman X Legacy Colletion"
-            app:layout_constraintTop_toBottomOf="@+id/image_view_megaman"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_game"
             app:layout_constraintStart_toStartOf="parent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginStart="10dp"/>
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chip_group_consoles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/text_view_game_name"
-            android:theme="@style/Theme.MaterialComponents.Light">
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PS4"/>
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nintendo Switch"/>
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="XONE"/>
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -61,10 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A famosa série Mega Man X está de volta! Jogue como Mega Man X - o poderoso sucessor do clássico robô de luta Mega Man - enquanto ele luta contra uma variedade de chefes mortais conhecidos como Mavericks em quatro títulos de sucesso."
+            android:layout_margin="5dp"
             app:layout_constraintTop_toBottomOf="@+id/chip_group_consoles"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <RatingBar
+            android:id="@+id/rating_bar_game"
             style="@style/Widget.AppCompat.RatingBar.Indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
