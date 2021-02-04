@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_new_game"
+        app:showAsAction="always"
+        android:title="Novo jogo"
+        android:icon="@drawable/ic_baseline_add_24"/>
+    <item android:id="@+id/menu_teste2"
+        app:showAsAction="ifRoom"
+        android:title="Teste2"
+        android:icon="@drawable/console_24"/>
+    <item android:id="@+id/menu_teste3"
+        android:title="Teste3"
+        android:icon="@drawable/console_24"/>
+</menu>
