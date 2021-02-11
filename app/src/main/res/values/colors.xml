@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#1181B5</color>
     <color name="rounded_red">#C80707</color>
+    <color name="background_title">#99000000</color>
 </resources>

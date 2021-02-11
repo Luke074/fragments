@@ -17,8 +17,8 @@ class GameDataSource {
                 "Sonic Unleashe é um jogo muito bom, mas com alguns bugs",
                 4.5f,
                 listOf(
-                    Console(1, "Wii", "Nintendo", "2006-11-19"),
-                    Console(2,"Playstation 3", "Sony", "2006-11-11")
+                    Console(1, "Nintendo Wii", "Nintendo", "2006-11-19", context.getDrawable(R.drawable.wii)!!),
+                    Console(2,"Playstation 3", "Sony", "2006-11-11", context.getDrawable(R.drawable.wii)!!)
                 ))
             )
             games.add(Game(2,
@@ -26,7 +26,7 @@ class GameDataSource {
                 context.getDrawable(R.drawable.mario_bros)!!,
                 "Super Mario Bros é um jogo classico",
                 4f, listOf(
-                    Console(3, "NES", "Nintendo", "1985-09-13")
+                    Console(3, "NES", "Nintendo", "1985-09-13", context.getDrawable(R.drawable.wii)!!)
                 ))
             )
             games.add(Game(3,
@@ -36,7 +36,7 @@ class GameDataSource {
                         "enquanto ele luta contra uma variedade de chefes mortais conhecidos como Mavericks em quatro títulos de sucesso.",
                 4f,
                 listOf(
-                    Console(4, "Super Nintendo", "Nintendo", "1990-11-21")
+                    Console(4, "Super Nintendo", "Nintendo", "1990-11-21", context.getDrawable(R.drawable.wii)!!)
                 ))
             )
 

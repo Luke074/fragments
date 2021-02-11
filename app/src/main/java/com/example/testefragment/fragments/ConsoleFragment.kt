@@ -1,16 +1,21 @@
 package com.example.testefragment.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.testefragment.R
+import com.example.testefragment.adapter.ConsoleAdapter
+import com.example.testefragment.data.dao.ConsoleDataSource
+import com.example.testefragment.model.Console
 
 class ConsoleFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private lateinit var recyclerConsole: RecyclerView
+    private val consoleAdapter = ConsoleAdapter()
+    private var consoleList = listOf<Console>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +26,20 @@ class ConsoleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_console, container, false)
+        val view = inflater.inflate(R.layout.fragment_console, container, false)
+
+        recyclerConsole = view.findViewById(R.id.recycler_view_console)
+        recyclerConsole.layoutManager = GridLayoutManager(view.context, 2, LinearLayoutManager.VERTICAL, false)
+        recyclerConsole.adapter = consoleAdapter
+
+        consoleList = ConsoleDataSource.getConsoles(view.context)
+
+        consoleAdapter.updateConsoleList(consoleList)
+
+        return view
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
     }
 }
