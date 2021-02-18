@@ -5,4 +5,5 @@
     <color name="colorAccent">#1181B5</color>
     <color name="rounded_red">#C80707</color>
     <color name="background_title">#99000000</color>
+    <color name="background_style">#A600CCFF</color>
 </resources>
