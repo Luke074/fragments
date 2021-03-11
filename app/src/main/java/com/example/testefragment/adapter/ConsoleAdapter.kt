@@ -23,9 +23,8 @@ class ConsoleAdapter: RecyclerView.Adapter<ConsoleViewHolder>(){
         return  ConsoleViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return consoleList.size
-    }
+    override fun getItemCount() = consoleList.size
+
 
     override fun onBindViewHolder(holder: ConsoleViewHolder, position: Int) {
         holder.bind(consoleList[position])

@@ -38,11 +38,11 @@ class GamesFragment : Fragment() {
         //Informar para a RecyclerView quem é o adapter que ela vai usar
         recyclreGame.adapter = gameAdapter
 
-        //Dizer ao adapter qual é a fonte de dados
-        gameList = GameDataSource.getGames(view.context)
-
-        //Atualizar a lsita de jogos do adapter
-        gameAdapter.updateGameList(gameList)
+//        //Dizer ao adapter qual é a fonte de dados
+//        gameList = GameDataSource.getGames(view.context)
+//
+//        //Atualizar a lsita de jogos do adapter
+//        gameAdapter.updateGameList(gameList)
 
         return view
     }

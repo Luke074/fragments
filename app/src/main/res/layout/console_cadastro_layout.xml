@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edit_text_console_name"
+        style="@style/CadastroEditText"
+        android:hint="Nome do Console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_console_maker"
+        style="@style/CadastroEditText"
+        android:hint="Quem fez o Console"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_console_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_text_console_date_realeass"
+        style="@style/CadastroEditText"
+        android:hint="Data De Lancamento Ex: 1983-07-15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_console_maker"/>
+
+    <EditText
+        android:id="@+id/image_view_console_image"
+        style="@style/CadastroEditText"
+        android:hint="Imagem do Console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_console_date_realeass"/>
+
+    <Button
+        android:id="@+id/button_salvar_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/image_view_console_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_cancelar_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/image_view_console_image"
+        app:layout_constraintEnd_toStartOf="@id/button_salvar_console"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,13 @@
 package com.example.testefragment
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -36,6 +38,8 @@ class MainActivity : AppCompatActivity(),
 
     private lateinit var drawer: DrawerLayout
 
+    private lateinit var imageButtonAddConsole: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.drawer_navigation_layout)
@@ -54,6 +58,8 @@ class MainActivity : AppCompatActivity(),
         toolbar.setTitle("Home")
         setSupportActionBar(toolbar)
 
+        imageButtonAddConsole = findViewById(R.id.image_button_add_console)
+        imageButtonAddConsole.setOnClickListener(this)
 
         drawer = findViewById(R.id.drawer_layout)
 
