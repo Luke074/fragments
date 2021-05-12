@@ -58,8 +58,8 @@ class MainActivity : AppCompatActivity(),
         toolbar.setTitle("Home")
         setSupportActionBar(toolbar)
 
-        imageButtonAddConsole = findViewById(R.id.image_button_add_console)
-        imageButtonAddConsole.setOnClickListener(this)
+//        imageButtonAddConsole = findViewById(R.id.image_button_add_console)
+//        imageButtonAddConsole.setOnClickListener(this)
 
         drawer = findViewById(R.id.drawer_layout)
 
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(),
 //                supportFragmentManager.beginTransaction()
 //                    .replace(R.id.frame, consoleFragment).commit()
 //            }
-//            R.id.button_games -> {
+//            R.id.button_games -> {g
 //                supportFragmentManager.beginTransaction()
 //                    .replace(R.id.frame, gamesFragment).commit()
 //            }
